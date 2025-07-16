@@ -16,6 +16,7 @@ This course introduces the principles of experimental design and appropriate ana
 - Incomplete block and row-column designs (e.g., Latin Square)
 - Nested and split-plot designs
 - Repeated measures and random effects models
+- Analysis of variance (ANOVA)
 - Analysis of covariance (ANCOVA)
 - Sample size calculations and model diagnostics
 - Use of **SAS** to analyze experimental data
