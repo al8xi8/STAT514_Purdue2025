@@ -1,5 +1,4 @@
-# STAT514_Purdue2025
-# STAT 514: Design of Experiments (Summer 2025)
+# STAT 514: Design of Experiments
 
 This repository contains coursework, notes, and SAS code for STAT 514, a graduate-level course on the design and analysis of experiments offered by the Department of Statistics at Purdue University. The course emphasizes the planning, execution, and analysis of experimental designs in applied statistics.
 
