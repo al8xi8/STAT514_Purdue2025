@@ -39,6 +39,9 @@ proc glm data=react;
   estimate "auditory - visual at time = 5 sec" cue 1 -1 cue*time 1 0 0 -1 0 0;
 run;
 
+/* Problem 3: Two-Way Main Effects Model - Estimability (no SAS code needed) */
+/* Answered in written form only — TRUE/FALSE evaluations for parameter estimability */
+
 /* Problem 4(b): Sample Size for Simultaneous CIs (Tukey-adjusted) */
 data samplesize;
   input r @@;
@@ -59,12 +62,12 @@ proc print;
   var r width;
 run;
 
-/* Problem 5(a–d): Coating Experiment - Full model with main and 2-way interactions */
+/* Problem 5(a–e): Coating Experiment - ANOVA and Interactions */
 data coating1;
-  do A = 2, 1;
-    do B = 2, 1;
-      do C = 2, 1;
-        do D = 2, 1;
+  do A=2,1;
+    do B=2,1;
+      do C=2,1;
+        do D=2,1;
           input y @@;
           output;
         end;
@@ -82,4 +85,16 @@ proc glm data=coating1;
   model y = A B C D A*B A*C A*D B*C B*D C*D;
   lsmeans B*C;
   lsmeans B / cl pdiff;
+run;
+
+/* Problem 5(e): 90% Upper Confidence Limit for Error Variance */
+data variance_upper_limit;
+  input SSE DF ChiSq;
+  upper_var = SSE / ChiSq;
+  lines;
+1.3517812 5 1.610308
+;
+run;
+
+proc print data=variance_upper_limit;
 run;
