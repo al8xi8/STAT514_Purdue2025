@@ -2,13 +2,13 @@
 
 This repository contains coursework, notes, and SAS code for STAT 514, a graduate-level course on the design and analysis of experiments offered by the Department of Statistics at Purdue University. The course emphasizes the planning, execution, and analysis of experimental designs in applied statistics.
 
-## 📘 Course Overview
+## Course Overview
 
 - **Term:** Summer 2025  
 - **Language:** SAS
 - **Instructor:** Dr. Chenzhong (Frank) Wu ([wu1108@purdue.edu](mailto:wu1108@purdue.edu))
 
-## 📚 Course Description
+## Course Description
 
 This course introduces the principles of experimental design and appropriate analysis methods for experimental data. Topics include:
 
